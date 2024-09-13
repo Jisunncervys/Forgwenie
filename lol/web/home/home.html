@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heart Buttons with Hover</title>
+    <style>
+    body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-image: url('../images/cutebg.gif'); /* Path to your background image */
+    background-size: cover; /* Ensure the image covers the whole body */
+    background-position: center; /* Center the background image */
+    background-repeat: no-repeat; /* Prevent repeating the background image */
+}
+
+.heart-buttons {
+    display: flex;
+    gap: 60px; /* Increased gap to accommodate larger hearts */
+}
+
+.heart-button {
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px; /* Increased size of the heart */
+    height: 200px; /* Increased size of the heart */
+    background-color: #FFB6C1; /* Pink color */
+    clip-path: path('M 100 160 Q 40 90 40 60 Q 40 20 80 20 Q 100 20 100 50 Q 100 20 120 20 Q 160 20 160 60 Q 160 90 100 160');
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    color: white;
+    text-decoration: none;
+    font-size: 1.5rem; /* Increased font size for better visibility */
+    font-weight: bold;
+    text-align: center;
+    line-height: 200px; /* Vertically center the text */
+}
+
+.heart-button:hover {
+    transform: scale(1.3); /* Heart enlarges on hover */
+    background-color: #FF69B4; /* Darker shade of pink */
+}
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+  background-color: #C9A9A6;
+}
+ th:first-child, td:first-child {
+            border-top-left-radius: 10px; /* Adjust radius as needed */
+        }
+
+        /* Adding rounded corners to the top-right cell */
+        th:last-child, td:last-child {
+            border-top-right-radius: 10px; /* Adjust radius as needed */
+        }
+
+        /* Adding rounded corners to the bottom-left cell */
+        tr:last-child th:first-child, tr:last-child td:first-child {
+            border-bottom-left-radius: 10px; /* Adjust radius as needed */
+        }
+
+        /* Adding rounded corners to the bottom-right cell */
+        tr:last-child th:last-child, tr:last-child td:last-child {
+            border-bottom-right-radius: 10px; /* Adjust radius as needed */
+        }
+    </style>
+</head>
+<body>
+<h1>
+<center>
+<table border=0 >
+<tr>
+<th>
+<p style="color: white; font-family: Arial, sans-serif; font-size: 30px;">
+Click the Hearts!!! <33
+</p>
+</th>
+</tr>
+</table>
+</center>
+<br>
+<br>
+    <div class="heart-buttons">
+        <a href="../crush/crush.html" class="heart-button">CRUSH</a>
+        <a href="../Love-Dating-Html-Template-master/index.html" class="heart-button">KITA</a>
+        <a href="../door-gh-pages/index.html" class="heart-button">>_<</a>
+    </div>
+
+</body>
+</html>
